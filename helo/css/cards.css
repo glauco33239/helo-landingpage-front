@@ -1,0 +1,288 @@
+/* 
+==========================================================================
+HÉLO — Cards (Produtos, Sobre, Diferenciais)
+==========================================================================
+*/
+
+/* ---- Produtos ---- */
+.products {
+  background-color: var(--color-bg-alt);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.product-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.product-image {
+  position: relative;
+  aspect-ratio: 4 / 3.4;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.06);
+}
+
+/* .product-fav {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  transition: transform var(--transition), background-color var(--transition);
+} */
+
+/* .product-fav:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: scale(1.08);
+}
+
+.product-fav svg {
+  width: 18px;
+  height: 18px;
+} */
+
+.product-info {
+  padding: var(--space-sm) var(--space-md) var(--space-md);
+}
+
+.product-info h3 {
+  font-family: var(--font-body);
+  font-size: var(--fs-md);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.3rem;
+}
+
+.product-price {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-sm);
+  font-family: var(--font-display);
+}
+
+.product-price small {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  font-weight: 400;
+  font-family: var(--font-body);
+}
+
+.product-btn {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.product-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.products-footer {
+  text-align: center;
+  margin-top: var(--space-lg);
+}
+
+/* ---- Card "em breve" (placeholder até adicionar a próxima foto real) ---- */
+.product-card--placeholder {
+  border: 2px dashed var(--color-border);
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.product-card--placeholder:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.product-image--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg-alt);
+  color: var(--color-primary-light);
+}
+
+.product-image--placeholder svg,
+.product-image--placeholder i {
+  width: 36px;
+  height: 36px;
+}
+
+.product-card--placeholder .product-btn {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ---- Sobre (duas colunas) ---- */
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.about-visual {
+  position: relative;
+}
+
+.about-visual img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.about-stat {
+  position: absolute;
+  bottom: -24px;
+  right: -24px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.about-stat strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+}
+
+.about-stat span {
+  font-size: var(--fs-xs);
+  opacity: 0.85;
+}
+
+.about-content h2 {
+  font-size: var(--fs-2xl);
+  margin-bottom: var(--space-sm);
+}
+
+.about-content p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.about-list {
+  margin-top: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.about-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.about-list svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-teal);
+  flex-shrink: 0;
+}
+
+/* ---- Diferenciais ---- */
+.perks {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.perks .section-title,
+.perks .section-subtitle {
+  color: var(--color-white);
+}
+
+.perks .section-subtitle {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.perk-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.perk-card {
+  text-align: center;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background-color: rgba(255, 255, 255, 0.06);
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.perk-card:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-4px);
+}
+
+.perk-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-sm);
+}
+
+.perk-icon svg {
+  width: 26px;
+  height: 26px;
+  color: var(--color-primary-light);
+}
+
+.perk-card h3 {
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: var(--fs-md);
+  margin-bottom: 0.4rem;
+}
+
+.perk-card p {
+  font-size: var(--fs-sm);
+  color: rgba(255, 255, 255, 0.7);
+}

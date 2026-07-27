@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HÉLO | Peças de crochê feitas à mão com carinho</title>
+  <meta name="description" content="Bolsas, cestos e amigurumis de crochê artesanal, feitos à mão com amor para você e para quem você ama. Encomendas para todo o Brasil." />
+
+  <link rel="icon" href="assets/logofavicon-512.png" type="image/png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="top-bar">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.7-4.35-9.3-8.2C1 10.2 1.4 6.9 4 5.2c2.2-1.4 4.9-.8 6.4 1.1L12 8l1.6-1.7c1.5-1.9 4.2-2.5 6.4-1.1 2.6 1.7 3 5 1.3 7.6C18.7 16.65 12 21 12 21z"/></svg>
+    <span>Feito à mão com amor para você e para quem você ama.</span>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="header">
+    <nav class="navbar container">
+      <a href="#inicio" class="brand">
+        <img src="assets/logo.png" alt="HÉLO - Feito com carinho" class="brand-logo" />
+        <span class="brand-text">
+          <span class="brand-name">HÉLO</span>
+          <span class="brand-tagline">Feito com carinho</span>
+        </span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#inicio" class="nav-link is-active">Início</a></li>
+        <li><a href="#produtos" class="nav-link">Produtos</a></li>
+        <li><a href="#sobre" class="nav-link">Quem Somos</a></li>
+        <li><a href="#diferenciais" class="nav-link">Encomendas</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+        <li class="nav-actions">
+          <a href="https://wa.me/+5527988073268" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp" ></i>
+            Fazer Pedido
+          </a>
+        </li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-content" data-aos="fade-right">
+          <h1>
+            Peças feitas
+            <span class="script-accent">com carinho <i data-lucide="heart"></i></span>
+          </h1>
+          <p class="hero-text">
+            Cada ponto carrega amor, dedicação e o cuidado de um trabalho manual feito especialmente para você.
+          </p>
+          <div class="hero-cta">
+            <a href="https://wa.me/+5527988073268" class="btn btn-primary" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp" ></i>
+              Fazer pedido
+            </a>
+            <a href="#produtos" class="btn btn-outline">Ver catálogo</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="150">
+          <!-- Composição com as 2 fotos reais dos produtos.
+               Para trocar, edite os arquivos em /assets ou os "src" abaixo. -->
+          <img src="assets/bolsa-azul-branco.jpg" alt="Bolsa de crochê trançada azul e branco HÉLO" class="hero-photo hero-photo--back" />
+          <img src="assets/bolsa-verde.jpg" alt="Bolsa de crochê trançada verde HÉLO" class="hero-photo hero-photo--front" />
+          <div class="hero-logo-tag">
+            <img src="assets/logoComHelo.png" alt="Logo HÉLO" />
+          </div>
+          <div class="hero-badge">
+            <i data-lucide="sparkles"></i>
+            <span>
+              <strong>Feito à mão</strong>
+              <span>peça por peça, com carinho</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUTOS ================= -->
+    <section class="products" id="produtos">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Produtos em destaque <i data-lucide="heart" style="width:22px;height:22px;color:var(--color-primary-light);vertical-align:middle;"></i></h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Peças únicas, tecidas à mão com fio de malha selecionado e muito cuidado em cada detalhe.
+        </p>
+
+        <div class="product-grid">
+          <!--
+            COMO ADICIONAR UM NOVO PRODUTO:
+            1. Coloque a foto em /assets (ex: produto-nome.jpg)
+            2. Copie um bloco <article class="product-card">...</article> inteiro
+            3. Troque a imagem, o título e o preço
+            Cada card é independente, então você pode adicionar quantos quiser.
+          -->
+          <article class="product-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="product-image">
+              <img src="assets/bolsa-azul-branco.jpg" alt="Bolsa trançada de crochê azul e branco" />
+              <button class="product-fav" aria-label="Favoritar produto"><i data-lucide="heart"></i></button>
+            </div>
+            <div class="product-info">
+              <h3>Bolsa Trançada Azul e Branco</h3>
+              <p class="product-price">R$ 189,90</p>
+              <button class="product-btn">Ver detalhes</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="product-image">
+              <img src="assets/bolsa-verde.jpg" alt="Bolsa trançada de crochê verde" />
+              <button class="product-fav" aria-label="Favoritar produto"><i data-lucide="heart"></i></button>
+            </div>
+            <div class="product-info">
+              <h3>Bolsa Trançada Verde</h3>
+              <p class="product-price">R$ 189,90</p>
+              <button class="product-btn">Ver detalhes</button>
+            </div>
+          </article>
+
+          <!-- Card "em breve" — apague este bloco assim que adicionar o próximo produto real -->
+          <article class="product-card product-card--placeholder" data-aos="fade-up" data-aos-delay="200">
+            <div class="product-image product-image--placeholder">
+              <i data-lucide="image-plus"></i>
+            </div>
+            <div class="product-info">
+              <h3>Novo modelo em breve</h3>
+              <p class="product-price">Em produção</p>
+              <button class="product-btn" disabled>Aguarde</button>
+            </div>
+          </article>
+        </div>
+        <!-- Futuras atualizações de "catalogo completo" a serem colocadas -->
+        <!-- <div class="products-footer" data-aos="fade-up">
+          <a href="#" class="btn btn-outline">Ver catálogo completo</a>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section class="about" id="sobre">
+      <div class="container">
+        <div class="about-visual" data-aos="fade-right">
+          <!-- Troque por uma foto do ateliê ou de outra peça quando tiver disponível -->
+          <img src="assets/bolsa-verde.jpg" alt="Detalhe da bolsa de crochê HÉLO com etiqueta da marca" />
+          <div class="about-stat">
+            <strong>100%</strong>
+            <span>feito à mão</span>
+          </div>
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+          <span class="eyebrow"><i data-lucide="sparkle"></i> Quem somos</span>
+          <h2>Um ateliê feito de <span class="script-accent">fios e afeto</span></h2>
+          <p>
+            A HÉLO nasceu da paixão pelo crochê e do desejo de transformar linha em memória. Cada peça é planejada, tecida e revisada à mão, do início ao acabamento final.
+          </p>
+          <p>
+            Trabalhamos com fio de malha de qualidade e cores selecionadas a dedo, unindo tradição artesanal a um toque contemporâneo.
+          </p>
+          <ul class="about-list">
+            <li><i data-lucide="check-circle"></i> Produção 100% artesanal e autoral</li>
+            <li><i data-lucide="check-circle"></i> Materiais selecionados e duráveis</li>
+            <li><i data-lucide="check-circle"></i> Peças únicas e personalizáveis</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DIFERENCIAIS ================= -->
+    <section class="perks" id="diferenciais">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Por que escolher a HÉLO</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Mais do que produtos, entregamos cuidado em cada etapa da sua encomenda.
+        </p>
+
+        <div class="perk-grid">
+          <div class="perk-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="perk-icon"><i data-lucide="hand"></i></div>
+            <h3>Produção artesanal</h3>
+            <p>Peças feitas manualmente com muito cuidado.</p>
+          </div>
+          <div class="perk-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="perk-icon"><i data-lucide="truck"></i></div>
+            <h3>Enviamos para você</h3>
+            <p>Entregamos com segurança e agilidade.</p>
+          </div>
+          <div class="perk-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="perk-icon"><i data-lucide="gift"></i></div>
+            <h3>Embalagem especial</h3>
+            <p>Cada pedido vai com carinho até você.</p>
+          </div>
+          <div class="perk-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="perk-icon"><i data-lucide="heart-handshake"></i></div>
+            <h3>Feito com carinho</h3>
+            <p>Mais que produtos, entregamos afeto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALERIA ================= -->
+    <section class="gallery" id="galeria">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Galeria de peças</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Um pouco do carinho que colocamos em cada trabalho.
+        </p>
+
+        <!--
+          COMO ADICIONAR MAIS FOTOS NA GALERIA:
+          Copie uma <div class="gallery-item">...</div> e troque a imagem.
+          As classes "span-2-2", "span-2-1" e "span-1-2" controlam o tamanho
+          do quadro no mosaico (ver css/gallery.css) — use-as para variar o layout.
+        -->
+        <div class="gallery-grid gallery-grid--simple">
+          <div class="gallery-item" data-aos="zoom-in">
+            <img src="assets/bolsa-azul-branco.jpg" alt="Bolsa de crochê azul e branco em destaque" />
+          </div>
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/bolsa-verde.jpg" alt="Bolsa de crochê verde com etiqueta HÉLO" />
+          </div>
+        </div>
+        <!-- Quando tiver mais fotos, troque a classe acima de volta para apenas
+             "gallery-grid" e use span-2-2 / span-2-1 / span-1-2 para o mosaico -->
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="contact" id="contato">
+      <div class="container">
+        <div class="contact-info" data-aos="fade-right">
+          <span class="eyebrow"><i data-lucide="mail"></i> Fale conosco</span>
+          <h2>Vamos criar algo <span class="script-accent">especial </span>?</h2>
+          <p>Envie sua mensagem ou fale direto pelo WhatsApp. Teremos prazer em te ajudar a escolher a peça perfeita.</p>
+
+          <div class="contact-item">
+            <span class="icon-badge"><i data-lucide="map-pin"></i></span>
+            <span>
+              <strong>Localização</strong>
+              <span>Atendimento e produção sob encomenda</span>
+            </span>
+          </div>
+          <div class="contact-item">
+            <span class="icon-badge"><i data-lucide="phone"></i></span>
+            <span>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/+5527988073268">(27) 988073268</a>
+            </span>
+          </div>
+          <div class="contact-item">
+            <span class="icon-badge"><i data-lucide="mail"></i></span>
+            <span>
+              <strong>E-mail</strong>
+              <a href="mailto:contato@helo.com.br">helofeitocomcarinho@gmail.com</a>
+            </span>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.instagram.com/helo_feitocomcarinho/" aria-label="instagram" target="_blank"><i class="fa-brands fa-instagram"></i><!--<i data-lucide="camera"></i> --></a>
+            <a href="https://www.facebook.com/herica.davitoria.16" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook"></i><!--<i data-lucide="facebook" target="_blank"></i>--></a>
+            <a href="https://wa.me/+5527988073268" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp" ></i><!--<i data-lucide="message-circle"></i>--></a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" data-aos="fade-left" novalidate >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Ex: Encomenda personalizada" />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" placeholder="Conte pra gente o que você tem em mente..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i data-lucide="send"></i>
+            Enviar mensagem
+          </button>
+          <p class="form-note">Respondemos em até 24h úteis.</p>
+          <div class="form-success">
+            <i data-lucide="check-circle"></i>
+            Mensagem enviada com sucesso! Em breve entraremos em contato.
+          </div>
+
+          <!-- <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Novo contato - HÉLO">
+          <input type="hidden" name="_next" value="http://127.0.0.1:3000/helo/helo/index.html?vscode-livepreview=true"> -->
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <img src="assets/logoComHelo.png" alt="Logo HÉLO" class="brand-logo" style="margin-bottom: 0.6rem;" />
+        <span class="brand-name">HÉLO</span>
+        <span class="brand-tagline">Feito com carinho</span>
+        <p>Peças de crochê artesanal feitas à mão para você e para quem você ama.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Links rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Quem Somos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4>Fique por dentro</h4>
+        <p>Receba novidades e lançamentos em primeira mão.</p>
+        <form class="newsletter-form" id="contact-form">
+          <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required />
+          <button type="submit" aria-label="Inscrever"><i data-lucide="send"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; 2026 HÉLO. Todos os direitos reservados.</span>
+      <div class="footer-bottom-links">
+        <p>Feito por <a href="https://www.instagram.com/g.bern239/" target="_blank" >Glauco</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
