@@ -74,6 +74,7 @@ HÉLO — Cards (Produtos, Sobre, Diferenciais)
 
 .product-info {
   padding: var(--space-sm) var(--space-md) var(--space-md);
+  min-height: 46px;
 }
 
 .product-info h3 {
@@ -82,6 +83,7 @@ HÉLO — Cards (Produtos, Sobre, Diferenciais)
   font-weight: 600;
   color: var(--color-text);
   margin-bottom: 0.3rem;
+  height: 46px;
 }
 
 .product-price {
