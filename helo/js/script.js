@@ -103,8 +103,8 @@ function initContactForm() {
     }
 
     emailjs.sendForm(
-      "service_39jczgt",
-      "template_bppt71j",
+      "service_lcfkxtx", //service ID
+      "template_60hmc88", //template ID
       form
     )
     .then(() => {
