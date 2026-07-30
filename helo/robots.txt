@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://helo-landingpage-front.vercel.app/sitemap.xml
