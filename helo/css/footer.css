@@ -10,10 +10,11 @@
 }
 
 .footer-top {
-  padding: var(--space-xl) 0 var(--space-lg);
+  padding: var(--space-xl) var(--space-md) var(--space-lg);
   display: grid;
   grid-template-columns: 1.4fr 1fr 1.2fr;
   gap: var(--space-lg);
+  align-items: start;
 }
 
 .footer-brand .brand-name,
@@ -129,7 +130,7 @@
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: var(--space-sm) 0;
+  padding: var(--space-sm) var(--space-md) var(--space-sm);
   display: flex;
   align-items: center;
   justify-content: space-between;

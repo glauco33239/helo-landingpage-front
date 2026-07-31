@@ -54,17 +54,12 @@ HÉLO — Header
   gap: 0.7rem;
 }
 
-.brand-icon {
-  color: var(--color-primary);
-  width: 42px;
-  height: 42px;
-  flex-shrink: 0;
-}
-
 /* Logo real da HÉLO (assets/logo.png) — troque o arquivo para atualizar em todo o site */
 .brand-logo {
-  width: 76px;
-  height: 76px;
+  width: 100%;
+  height: 100%;
+  max-width: 66px;
+  max-height: 66px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
