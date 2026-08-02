@@ -91,7 +91,7 @@ function initContactForm() {
 
   // Inicializa o EmailJS
   emailjs.init({
-    publicKey: "KeMeQmQ_nERIkysJP",
+    publicKey: "4ixTuX6yY2oYPGfdq",
   });
 
   form.addEventListener("submit", function (event) {
